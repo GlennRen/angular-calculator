@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="calculator" ng-init="person = {fName: 'Glenn', lName: 'Ren'}; capitals = [{city: 'Montgomery', state: 'Alabama'}, {city: 'Juneau', state: 'Alaska'}, {city: 'Phoneix', state: 'Arizona'}]">
+<head>
+	<title>Calculator | AngularJS</title>
+</head>
+<body>
+	<div ng-controller="ctrl1">
+
+		<span>Values:</span>
+		<input type="text" ng-model="num1" />
+		<input type="text" ng-model="num2" />
+
+		<button ng-click="add()">+</button>
+		<button ng-click="subtract()">-</button>
+		<button ng-click="multiply()">*</button>
+		<button ng-click="divide()">/</button>
+
+
+		<br><br>
+
+		{{calculation}}
+
+		<p>5 + 5 = {{5+5}}</p>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
